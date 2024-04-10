@@ -75,22 +75,22 @@
         }
 
         .nav-list li a.active::before {
-			content: '';
-			position: absolute;
-			width: 100%;
-			height: 2px;
-			bottom: 0;
-			left: 0;
-			background-color: #fff;
-			visibility: hidden;
-			transform: scaleX(0);
-			transition: all 0.3s ease-in-out;
-		}
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		bottom: 0;
+		left: 0;
+		background-color: #fff;
+		visibility: hidden;
+		transform: scaleX(0);
+		transition: all 0.3s ease-in-out;
+	}
 
-		.nav-list li a.active::before {
-			visibility: visible;
-			transform: scaleX(1);
-		}
+	.nav-list li a.active::before {
+		visibility: visible;
+		transform: scaleX(1);
+	}
 
         /* Main content styles */
         .main-content {
@@ -99,15 +99,15 @@
         }
 
         .section {
-			margin-bottom: 50px;
-			border: 10px solid #ccc;
-			border-radius: 8px;
-			padding: 10px;
-			background-color: #fff;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-			text-align: center; /* Metni sayfanın ortasına hizala */
-			min-height: 88vh; /* Minimum yükseklik olarak belirle */
-		}
+		margin-bottom: 50px;
+		border: 10px solid #ccc;
+		border-radius: 8px;
+		padding: 10px;
+		background-color: #fff;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		text-align: center; /* Metni sayfanın ortasına hizala */
+		min-height: 88vh; /* Minimum yükseklik olarak belirle */
+	}
 
         /* Form styles */
         .contact-form {
@@ -174,69 +174,69 @@
             z-index: 1000;
             display: none; /* İlk başta gizli */
         }
-		.contact-info {
-			display: flex;
-			justify-content: center; /* Logoları yatayda ortala */
-			margin-top: 20px; /* Logolar ile form arasında boşluk bırak */
-		}
+	.contact-info {
+		display: flex;
+		justify-content: center; /* Logoları yatayda ortala */
+		margin-top: 20px; /* Logolar ile form arasında boşluk bırak */
+	}
 
-		.contact-info ul {
-			list-style: none;
-			padding: 0;
-			margin: 0;
-			display: flex;
-		}
+	.contact-info ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+	}
 
-		.contact-info ul li {
-			margin: 0 20px; /* Her logo arasında boşluk bırak */
-		}
+	.contact-info ul li {
+		margin: 0 20px; /* Her logo arasında boşluk bırak */
+	}
 
-		.contact-info ul li a img {
-			width: 40px; /* Logonun genişliği */
-			height: 40px; /* Otomatik yükseklik ayarı */
-		}
-		.flex-container {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-		}
+	.contact-info ul li a img {
+		width: 40px; /* Logonun genişliği */
+		height: 40px; /* Otomatik yükseklik ayarı */
+	}
+	.flex-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
 
-		.flex-item {
-			width: calc(33.33% - 20px); /* 3 sütunlu grid layout */
-			margin-bottom: 20px;
-		}
+	.flex-item {
+		width: calc(33.33% - 20px); /* 3 sütunlu grid layout */
+		margin-bottom: 20px;
+	}
+	#sertifikalar .certificate-group {
+		display: inline-block;
+		width: calc(25% - 20px); /* 4 sütun olacağı için genişlik 25%'lik */
+		margin-right: 20px; /* Sağ boşluk */
+		margin-bottom: 20px; /* Alt boşluk */
+		vertical-align: top; /* Yukarı hizalama */
+		box-sizing: border-box; /* Kutu modelini genişlik ve yükseklik dahil kutu sınırlarına göre hesaplar */
+	}
+
+	/* Son sertifika grubunun sağ boşluğunu kaldır */
+	#sertifikalar .certificate-group:last-child {
+		margin-right: 0;
+	}
+
+	@media (max-width: 768px) {
 		#sertifikalar .certificate-group {
-			display: inline-block;
-			width: calc(25% - 20px); /* 4 sütun olacağı için genişlik 25%'lik */
-			margin-right: 20px; /* Sağ boşluk */
-			margin-bottom: 20px; /* Alt boşluk */
-			vertical-align: top; /* Yukarı hizalama */
-			box-sizing: border-box; /* Kutu modelini genişlik ve yükseklik dahil kutu sınırlarına göre hesaplar */
+			width: calc(50% - 20px); /* 2 sütun olacağı için genişlik 50%'lik */
 		}
+	}
 
-		/* Son sertifika grubunun sağ boşluğunu kaldır */
-		#sertifikalar .certificate-group:last-child {
-			margin-right: 0;
+	@media (max-width: 576px) {
+		#sertifikalar .certificate-group {
+			width: calc(100% - 20px); /* Tek sütun olacağı için genişlik 100%'lik */
+			margin-right: 0; /* Sağ boşluğu kaldır */
 		}
-
-		@media (max-width: 768px) {
-			#sertifikalar .certificate-group {
-				width: calc(50% - 20px); /* 2 sütun olacağı için genişlik 50%'lik */
-			}
+	}
+	/* Mobil ekranlar için font boyutunu otomatik olarak küçült */
+	@media only screen and (max-width: 600px) {
+		.nav-list li a {
+			font-size: 0.7em; /* Örnek olarak font boyutunu 0.8em'e küçült */
 		}
-
-		@media (max-width: 576px) {
-			#sertifikalar .certificate-group {
-				width: calc(100% - 20px); /* Tek sütun olacağı için genişlik 100%'lik */
-				margin-right: 0; /* Sağ boşluğu kaldır */
-			}
-		}
-	    	/* Mobil ekranlar için font boyutunu otomatik olarak küçült */
-		@media only screen and (max-width: 600px) {
-			.nav-list li a {
-				font-size: 0.8em; /* Örnek olarak font boyutunu 0.8em'e küçült */
-			}
-		}
+	}
 
 
 
