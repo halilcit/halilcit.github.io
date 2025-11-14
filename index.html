@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html class="light" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Halil Çit - Web Site</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 70px;
+        }
+        .social-icon-container svg {
+            width: 1.75rem;
+            height: 1.75rem;
+        }
+        .active-link {
+            color: #137fec !important;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-[#212529] dark:text-white/90">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<header class="fixed top-0 z-50 flex w-full items-center justify-center whitespace-nowrap border-b border-solid border-b-black/10 bg-background-light/80 backdrop-blur-sm dark:border-b-white/10 dark:bg-background-dark/80">
+<div class="flex w-full max-w-5xl items-center justify-between px-4 py-3">
+<a class="flex items-center gap-3" href="#home">
+<h2 class="text-lg font-bold tracking-tight text-[#212529] dark:text-white">Halil Çit - Web Site</h2>
+</a>
+<nav class="hidden items-center gap-1 md:flex">
+<a class="nav-link relative px-3 py-2 text-sm font-medium text-[#212529] transition-colors hover:text-primary dark:text-white/90 dark:hover:text-primary" href="#home">Ana Sayfa</a>
+<a class="nav-link relative px-3 py-2 text-sm font-medium text-[#212529] transition-colors hover:text-primary dark:text-white/90 dark:hover:text-primary" href="#about">Hakkımda</a>
+<a class="nav-link relative px-3 py-2 text-sm font-medium text-[#212529] transition-colors hover:text-primary dark:text-white/90 dark:hover:text-primary" href="#certificates">Sertifikalar</a>
+<a class="nav-link relative px-3 py-2 text-sm font-medium text-[#212529] transition-colors hover:text-primary dark:text-white/90 dark:hover:text-primary" href="#skills">Yetenekler</a>
+<a class="nav-link relative px-3 py-2 text-sm font-medium text-[#212529] transition-colors hover:text-primary dark:text-white/90 dark:hover:text-primary" href="#projects">Projeler</a>
+<a class="nav-link relative px-3 py-2 text-sm font-medium text-[#212529] transition-colors hover:text-primary dark:text-white/90 dark:hover:text-primary" href="#contact">İletişim</a>
+</nav>
+</div>
+</header>
+<main class="flex w-full flex-col items-center pt-[61px]">
+<section class="flex w-full max-w-5xl items-center px-4 py-20 md:py-32" id="home">
+<div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
+<div>
+<h1 class="text-4xl font-black tracking-tighter text-[#212529] dark:text-white sm:text-5xl">Merhaba, <br/>ben Halil Çit.</h1>
+<p class="mt-4 max-w-3xl text-lg text-[#6C757D] dark:text-white/70">Web sayfama hoş geldiniz.  Benim hakkımda daha fazla bilgi edinmek için lütfen "Hakkımda" bölümüne göz atın veya en son projelerimi incelemek istiyorsanız "Projeler" kısmına gidebilirsiniz. İletişime geçmek isterseniz, iletişim alanındaki formu doldurabilir veya sosyal medya hesaplarımı ziyaret edebilirsiniz.</p>
+</div>
+<div class="flex justify-center md:justify-end">
+<img alt="Halil Çit" class="h-64 w-64 rounded-full object-cover shadow-lg ring-4 ring-primary/20" src="https://avatars.githubusercontent.com/u/5413629?v=4"/>
+</div>
+</div>
+</section>
+<section class="w-full bg-white px-4 py-16 dark:bg-background-dark/50 md:py-24" id="about">
+<div class="mx-auto max-w-5xl">
+<h2 class="pb-8 text-center text-[22px] font-bold tracking-tight text-[#212529] dark:text-white">Hakkımda</h2>
+<div class="mx-auto max-w-3xl text-left">
+<p class="text-base font-normal leading-relaxed text-[#6C757D] dark:text-white/70">Kıdemli Sistem ve Network Uzmanıyım. İzmir Katip Çelebi Üniversitesi'nde Yazılım Mühendisliği Yüksek Lisans mezunuyum. Yazılım geliştirme, Network ve en son teknolojilere odaklanarak kariyer yolculuğumu sürdürmekteyim. Aynı zamanda, Cisco teknolojilerine odaklanarak Network uzmanı olarak beceri kazandım. Bu alanda ve eğitim yolculuğunda edindiğim deneyimler, teknolojiye olan tutkumu ve profesyonel gelişimimi güçlendirdi.</p>
+</div>
+<div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
+<div class="rounded-lg bg-background-light p-6 dark:bg-background-dark">
+<h3 class="font-bold text-primary">Ön Lisans</h3>
+<p class="mt-2 font-semibold text-[#212529] dark:text-white/90">Sakarya Üniversitesi</p>
+<p class="text-sm text-[#6C757D] dark:text-white/70">İnternet ve Ağ Teknolojileri (2018 - 2020)</p>
+</div>
+<div class="rounded-lg bg-background-light p-6 dark:bg-background-dark">
+<h3 class="font-bold text-primary">Lisans</h3>
+<p class="mt-2 font-semibold text-[#212529] dark:text-white/90">Kafkas Üniversitesi</p>
+<p class="text-sm text-[#6C757D] dark:text-white/70">Yönetim Bilişim Sistemleri (2020 - 2022)</p>
+</div>
+<div class="rounded-lg bg-background-light p-6 dark:bg-background-dark">
+<h3 class="font-bold text-primary">Yüksek Lisans</h3>
+<p class="mt-2 font-semibold text-[#212529] dark:text-white/90">İzmir Katip Çelebi Üniversitesi</p>
+<p class="text-sm text-[#6C757D] dark:text-white/70">Yazılım Mühendisliği (2023 - Devam Ediyor)</p>
+</div>
+</div>
+</div>
+</section>
+<section class="w-full px-4 py-16 md:py-24" id="certificates">
+<div class="mx-auto max-w-5xl">
+<h2 class="pb-8 text-center text-[22px] font-bold tracking-tight text-[#212529] dark:text-white">Sertifikalar</h2>
+<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+<div class="rounded-lg bg-white p-4 shadow-sm dark:bg-background-dark/50">
+  <h3 class="font-semibold text-primary">Cisco Network</h3>
+  <p class="mt-1 text-sm text-[#6C757D] dark:text-white/70">CCNP: Core Networking <br>CCNP: Advanced Routing <br>CCNA: Enterprise Networking, Security, and Automation <br>CCNA: Introduction to Networks <br>CCNA: Switching, Routing, and Wireless Essentials <br>Network Technician Career Path <br>Networking Academy Learn-A-Thon 2023 <br>Network Support and Security <br>Computer Hardware Basics <br>Networking Basics <br>Networking Essentials <br>Networking Devices and Initial Configuration <br>Network Addressing and Basic Troubleshooting</p>
+</div>
+<div class="rounded-lg bg-white p-4 shadow-sm dark:bg-background-dark/50">
+  <h3 class="font-semibold text-primary">Security</h3>
+  <p class="mt-1 text-sm text-[#6C757D] dark:text-white/70">Cyber Threat Management <br>Endpoint Security <br>Network Security <br>Network Defense <br>Junior Cybersecurity Analyst Career Path <br>CyberOps Associate</p>
+</div>
+<div class="rounded-lg bg-white p-4 shadow-sm dark:bg-background-dark/50">
+  <h3 class="font-semibold text-primary">Python</h3>
+  <p class="mt-1 text-sm text-[#6C757D] dark:text-white/70">Python Essentials 1 <br>Python Essentials 2</p>
+</div>
+<div class="rounded-lg bg-white p-4 shadow-sm dark:bg-background-dark/50">
+  <h3 class="font-semibold text-primary">Introduction</h3>
+  <p class="mt-1 text-sm text-[#6C757D] dark:text-white/70">Introduction to Data Science <br>Fundamentals for Kyverno</p>
+</div>
+<div class="rounded-lg bg-white p-4 shadow-sm dark:bg-background-dark/50">
+  <h3 class="font-semibold text-primary">Knowledge Club</h3>
+  <p class="mt-1 text-sm text-[#6C757D] dark:text-white/70"> Network Automation With Python</p>
+</div>
+<div class="rounded-lg bg-white p-4 shadow-sm dark:bg-background-dark/50">
+  <h3 class="font-semibold text-primary">PeopleCert</h3>
+  <p class="mt-1 text-sm text-[#6C757D] dark:text-white/70">ITIL® Foundation Certificate in IT Service Management</p>
+</div>
+<div class="rounded-lg bg-white p-4 shadow-sm dark:bg-background-dark/50">
+  <h3 class="font-semibold text-primary">Turkcell Geleceği Yazanlar</h3>
+  <p class="mt-1 text-sm text-[#6C757D] dark:text-white/70"> Basic Linux 401</p>
+</div>
+<div class="rounded-lg bg-white p-4 shadow-sm dark:bg-background-dark/50">
+  <h3 class="font-semibold text-primary">Ostim Teknik Üniversitesi</h3>
+  <p class="mt-1 text-sm text-[#6C757D] dark:text-white/70">Siber Güvenlik Uzmanlığı <br>Siber Güvenlik Analisti <br>CCNA <br>CyberOps <br>Linux Sistem Yöneticiliği <br>Beyaz Şapkalı Hacker v11 <br>ISO 27001 <br>KVKK</p>
+</div>
+<div class="rounded-lg bg-white p-4 shadow-sm dark:bg-background-dark/50">
+  <h3 class="font-semibold text-primary">Isparta Uygulamalı Bilimler Üniversitesi</h3>
+  <p class="mt-1 text-sm text-[#6C757D] dark:text-white/70">Basic Cyber Security Training</p>
+</div>
+<div class="rounded-lg bg-white p-4 shadow-sm dark:bg-background-dark/50">
+  <h3 class="font-semibold text-primary">Bilişim Academy</h3>
+  <p class="mt-1 text-sm text-[#6C757D] dark:text-white/70">C# ile Programlamaya Giriş</p>
+</div>
+<div class="rounded-lg bg-white p-4 shadow-sm dark:bg-background-dark/50">
+  <h3 class="font-semibold text-primary">Millî Eğitim Bakanlığı</h3>
+  <p class="mt-1 text-sm text-[#6C757D] dark:text-white/70">Bilgisayar İşletmenliği (Operatörlüğü)</p>
+</div>
+<div class="rounded-lg bg-white p-4 shadow-sm dark:bg-background-dark/50">
+  <h3 class="font-semibold text-primary">Simpler</h3>
+  <p class="mt-1 text-sm text-[#6C757D] dark:text-white/70">Elementary Level English</p>
+</div>
+
+</div>
+</div>
+</section>
+<section class="w-full bg-white px-4 py-16 dark:bg-background-dark/50 md:py-24" id="skills">
+<div class="mx-auto max-w-5xl">
+<h2 class="pb-8 text-center text-[22px] font-bold tracking-tight text-[#212529] dark:text-white">Yetenekler</h2>
+<div class="flex flex-wrap justify-center gap-2">
+<span class="rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary">İleri Programlama Teknikleri</span>
+<span class="rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary">Network Automation With Python</span>
+<span class="rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary">Yazılım Gereksinim Mühendisliği</span>
+<span class="rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary">Doğal Dil İşleme</span>
+<span class="rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary">Veri Bilimi ve Mühendisliği</span>
+<span class="rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary">Yapay Zeka ve Uzman Sistemler</span>
+<span class="rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary">Veri Analizi ve Görselleştirme</span>
+<span class="rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary">Makine Öğrenimi</span>
+<span class="rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary">Yazılım Testi</span>
+<span class="rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary">Yazılım Geliştirme</span>
+<span class="rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary">Network</span>
+<span class="rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary">Kablosuz Ağ İletişimi</span>
+<span class="rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary">Ağ Mimarisi</span>
+<span class="rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary">Ağ Sorunlarını Giderme</span>
+<span class="rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary">DHCP</span><span class="rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary">DNS</span>
+<span class="rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary">HTML</span><span class="rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary">CSS</span>
+<span class="rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary">Java</span><span class="rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary">JavaScript</span>
+<span class="rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary">IIS</span><span class="rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary">Active Directory</span>
+<span class="rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary">Windows Server</span>
+<span class="rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary">Windows</span>
+<span class="rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary">SQL</span>
+<span class="rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary">Linux</span>
+<span class="rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary">İşletim Sistemleri</span>
+<span class="rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary">Siber Güvenlik</span>
+<span class="rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary">Etik Bilgisayar Korsanlığı</span>
+</div>
+</div>
+</section>
+<section class="w-full px-4 py-16 md:py-24" id="projects">
+<div class="mx-auto max-w-5xl">
+<h2 class="pb-2 text-center text-[22px] font-bold tracking-tight text-[#212529] dark:text-white">Projeler</h2>
+<p class="mx-auto mb-8 max-w-2xl text-center text-[#6C757D] dark:text-white/70">Burada en son projelerimden bazılarını bulabilirsiniz:</p>
+<div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+<div class="rounded-lg bg-white p-6 shadow-sm dark:bg-background-dark/50">
+<h3 class="text-lg font-bold text-[#212529] dark:text-white">Proje 1</h3>
+<p class="mt-2 text-sm text-[#6C757D] dark:text-white/70">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac nisl a libero condimentum facilisis.</p>
+</div>
+<div class="rounded-lg bg-white p-6 shadow-sm dark:bg-background-dark/50">
+<h3 class="text-lg font-bold text-[#212529] dark:text-white">Proje 2</h3>
+<p class="mt-2 text-sm text-[#6C757D] dark:text-white/70">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac nisl a libero condimentum facilisis.</p>
+</div>
+<div class="rounded-lg bg-white p-6 shadow-sm dark:bg-background-dark/50">
+<h3 class="text-lg font-bold text-[#212529] dark:text-white">Proje 3</h3>
+<p class="mt-2 text-sm text-[#6C757D] dark:text-white/70">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac nisl a libero condimentum facilisis.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="w-full bg-white px-4 py-16 dark:bg-background-dark/50 md:py-24" id="contact">
+<div class="mx-auto flex max-w-5xl flex-col items-center">
+<h2 class="pb-2 text-center text-[22px] font-bold tracking-tight text-[#212529] dark:text-white">İletişim</h2>
+<p class="mb-8 max-w-md text-center text-[#6C757D] dark:text-white/70">Benimle iletişime geçmek için aşağıdaki formu doldurabilirsiniz:</p>
+<form class="w-full max-w-lg space-y-4" id="contact-form">
+<div><label class="sr-only" for="name">Ad</label><input class="w-full rounded-md border-gray-300 bg-background-light focus:border-primary focus:ring-primary dark:border-gray-600 dark:bg-background-dark" id="name" name="name" placeholder="Ad" required="" type="text"/></div>
+<div><label class="sr-only" for="email">E-posta</label><input class="w-full rounded-md border-gray-300 bg-background-light focus:border-primary focus:ring-primary dark:border-gray-600 dark:bg-background-dark" id="email" name="email" placeholder="E-posta" required="" type="email"/></div>
+<div><label class="sr-only" for="message">Mesaj</label><textarea class="w-full rounded-md border-gray-300 bg-background-light focus:border-primary focus:ring-primary dark:border-gray-600 dark:bg-background-dark" id="message" name="message" placeholder="Mesaj" required="" rows="5"></textarea></div>
+<button class="flex h-12 w-full min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-5 text-base font-bold tracking-wide text-white transition-colors hover:bg-primary/90" type="submit">
+<span class="truncate">Gönder</span>
+</button>
+</form>
+<div class="social-icon-container mt-12 flex items-center gap-6">
+<a aria-label="LinkedIn" class="text-[#6C757D] hover:text-primary dark:text-white/70 dark:hover:text-primary" href="https://www.linkedin.com/in/halilcit" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" viewBox="0 0 24 24">
+<path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+</svg>
+</a>
+<a aria-label="GitHub" class="text-[#6C757D] hover:text-primary dark:text-white/70 dark:hover:text-primary" href="https://github.com/halilcit" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" viewBox="0 0 24 24">
+<path clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.489.5.092.682-.218.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.942.359.308.678.92.678 1.852 0 1.338-.012 2.419-.012 2.747 0 .266.18.577.688.48A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" fill-rule="evenodd"></path>
+</svg>
+</a>
+<a aria-label="Credly" class="text-[#6C757D] hover:text-primary dark:text-white/70 dark:hover:text-primary" href="https://www.credly.com/users/halilcit/badges" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.44 14.88l-1.44-1.44L18.88 12 15.44 8.56l1.44-1.44L21.76 12l-3.32 4.88zM8.56 15.44L7.12 14 2.24 12l4.88-2L8.56 8.56 3.68 12l4.88 3.44zm.88 2.44l4.88-14.64 1.44.48-4.88 14.64-1.44-.48z"></path>
+</svg>
+</a>
+<a aria-label="Email" class="text-[#6C757D] hover:text-primary dark:text-white/70 dark:hover:text-primary" href="mailto:halilcit@gmail.com">
+<svg fill="currentColor" viewBox="0 0 24 24">
+<path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path>
+</svg>
+</a>
+</div>
+</div>
+</section>
+</main>
+<footer class="w-full bg-white px-4 py-6 dark:bg-background-dark/50">
+<div class="mx-auto max-w-5xl text-center text-sm text-[#6C757D] dark:text-white/70">
+<p>Telif Hakkı © 2024 - Halil Çit</p>
+</div>
+</footer>
+<div class="pointer-events-none fixed bottom-5 right-5 flex items-center gap-4 rounded-lg bg-white p-4 shadow-lg opacity-0 transition-opacity duration-300 dark:bg-gray-800" id="notification">
+<div id="notification-icon"></div>
+<p class="text-sm font-medium text-[#212529] dark:text-white/90" id="notification-text"></p>
+</div>
+</div>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('contact-form');
+            const notification = document.getElementById('notification');
+            const notificationText = document.getElementById('notification-text');
+            const notificationIcon = document.getElementById('notification-icon');
+            if (form && notification) {
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const name = form.querySelector('#name').value.trim();
+                    const email = form.querySelector('#email').value.trim();
+                    const message = form.querySelector('#message').value.trim();
+                    if (name === '' || email === '' || message === '') {
+                        notificationText.textContent = 'Lütfen tüm alanları doldurun.';
+                        notificationIcon.innerHTML = `<svg class="h-6 w-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>`;
+                    } else {
+                        notificationText.textContent = 'Mail Uygulaması açılıyor!';
+                        notificationIcon.innerHTML = `<svg class="h-6 w-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>`;
+                        const mailtoLink = `mailto:halilcit@gmail.com?subject=Github üzerinden iletişim : ${name}&body=${encodeURIComponent(message)}%0A%0AEmail: ${email}`;
+                        window.location.href = mailtoLink;
+                        form.reset();
+                    }
+                    notification.classList.remove('opacity-0', 'pointer-events-none');
+                    setTimeout(() => {
+                        notification.classList.add('opacity-0', 'pointer-events-none');
+                    }, 3000);
+                });
+            }
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.5
+            };
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const sectionId = entry.target.id;
+                        navLinks.forEach(link => {
+                            link.classList.remove('active-link');
+                            if (link.getAttribute('href') === `#${sectionId}`) {
+                                link.classList.add('active-link');
+                            }
+                        });
+                    }
+                });
+            }, observerOptions);
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body></html>
